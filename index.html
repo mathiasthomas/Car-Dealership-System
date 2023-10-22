@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="main.css">
+    <title>Elite Auto</title>
+</head>
+<body>
+    <div class="nav-section">
+        <div class="nav-left">
+            <h1 class="brand">Elite <span>Auto</span></h1>
+            <ul class="nav-list-left">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Stock</a></li>
+                <li><a href="#">Market Place</a></li>
+                <li><a href="#">Patners</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-list-right">
+                <li><a href="#" class="register">Register</a></li>
+                <li>|</li>
+                <li><a href="#" class="login">Login</a></li>
+                <li class="listing"><a href="#">Add Listing</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header-section">
+        <div class="header-content">
+            <div class="feature-title">
+               <h2> Mercedes Benz AMG GT 2023</h2>
+               <h3><span>$ 320</span> per Month</h3>
+               <h3>For 36 Months</h3>
+            </div>
+            <div class="feature-buttons">
+                <button class="Test-Drive">Test Drive</button>
+                <button class="learn-More">Learn More</button>
+            </div>
+        </div>
+        <div class="search-bar">
+            <h2 class="search-title">Search Inventory</h2>
+            <form action="search_results.php" method="post" class="search-form">
+                <select id="year" name="year">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <!-- Add more options for different years -->
+                </select>
+                <input type="text" id="make" name="make" placeholder="E.g., Toyota, Ford, etc." />
+                <input type="text" id="model" name="model" placeholder="E.g., Camry, F-150, etc." />
+        
+                <input type="submit" value="SEARCH">
+            </form>
+        </div>
+    </div>
+    
+    <!-- Listings -->
+    <div class="listing-section">
+        <div class="listing-header">
+            <h2 class="recent-listing-title">Recent <span>Cars</span></h2>
+            <div class="recent-listings-button">
+                <h3 class="new">New</h3>
+                <h3 class="used">Used</h3>
+            </div>
+        </div>
+        <div class="listings-content">
+            <div class="listings-content-left">
+                <img src="images/6-768x600.jpg" alt="">
+                <h3 class="listing-right-title">BMW 8-series 2-Door Coupe grey</h3>
+                <div class="main-listing-card">
+                    <div class="listing-detail-left">
+                        <h4 class="year">2023</h4>
+                        <h4>Automatic</h4>
+                        <h4>Petrol</h4>
+                        <h4>Front Wheel Drive</h4>
+                    </div>
+                    <div class="listing-detail-left-right">
+                        <h4>$ 70,000</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="listings-content-right">
+                <div class="listing-card">
+                    <img src="images/1.jpg" alt="">
+                    <div class="card-title">
+                        <h4 class="card-titles">Chevrolet Camaro -2 Door</h4>
+                        <div class="card-price">$30,000</div>
+                    </div>
+                    <div class="card-details">
+                        <h4 class="year">2021</h4>
+                        <h4>Automatic</h4>
+                        <h4>Diesel</h4>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="images/2.jpg" alt="">
+                    <div class="card-title">
+                        <h4 class="card-titles">Ferrari  458</h4>
+                        <div class="card-price">$30,000</div>
+                    </div>
+                    <div class="card-details">
+                        <h4 class="year">2021</h4>
+                        <h4>Automatic</h4>
+                        <h4>Diesel</h4>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="images/3.jpg" alt="">
+                    <div class="card-title">
+                        <h4 class="card-titles">Audi Q7 -4 Door</h4>
+                        <div class="card-price">$40,000</div>
+                    </div>
+                    <div class="card-details">
+                        <h4 class="year">2023</h4>
+                        <h4>Automatic</h4>
+                        <h4>Petro</h4>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="images/4.jpg" alt="">
+                    <div class="card-title">
+                        <h4 class="card-titles">Mercedes Benz GLE -2 Door</h4>
+                        <div class="card-price">$60,000</div>
+                    </div>
+                    <div class="card-details">
+                        <h4 class="year">2023</h4>
+                        <h4>Manual</h4>
+                        <h4>Diesel</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="action-section">
+        <div class="customer">
+            <img src="images/searching-icon.png" alt="" class="customer-icon">
+            <div class="action-header">
+                <h3>IN NEED FOR A CAR?</h3>
+                <h4>Our cars are delivered fully-registered with all requirements completed. We’ll deliver your car wherever you are.</h4>
+                
+            </div>
+            <button class="action-button">CARS LISTING</button>
+        </div>
+        <div class="dealer">
+            <img src="images/searching-icon2.png" alt="" class="customer-icon">
+            <div class="action-header">
+            <h3>WANTS TO SELL A CAR?</h3>
+            <h4 class="dealer-text">Receive the absolute best value for your trade-in vehicle. We even handle all paperwork. Schedule appointment!</h4>
+            
+        </div>
+        <button class="action-button">SELL A CAR</button>
+        </div>
+    </div>
+
+    <div class="why-us-section">
+        <h3 class="why-us-title">WHY <span>CHOOSE</span> US ?</h3>
+        <div class="why-us">
+        <div class="why-us-content">
+            <div class="why-us-item">
+                <img src="images/financing.png" alt="" class="why-us-img">
+                <div class="why-us-item-content">
+                    <h3>EASY FINANCING</h3>
+                    <h4>Our stress-free finance department that can find financial solutions to save you money.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="why-us-content">
+            <div class="why-us-item">
+                <img src="images/brand-icon.png" alt="" class="why-us-img">
+                <div class="why-us-item-content">
+                    <h3>WIDE RANGE OF BRANDS</h3>
+                    <h4>Our stress-free finance department that can find financial solutions to save you money.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="why-us-content">
+            <div class="why-us-item">
+                <img src="images/mech-icon.png" alt="" class="why-us-img">
+                <div class="why-us-item-content">
+                    <h3>CAR SERVICE & MAINTENANCE</h3>
+                    <h4>Our service department maintain your car to stay safe on the road for many more years.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer-section">
+        <div class="footer-items">
+            <div class="footer-item1">
+                <h1 class="brand">Elite <span>Auto</span></h1>
+                <h3>@EliteAuto All Rights Reserved</h3>
+                <img src="images/facebook_2504903.png" alt="" class="footer-img">
+                <img src="images/youtube_3670147.png" alt="" class="footer-img">
+                <img src="images/tiktok_3116490.png" alt="" class="footer-img">
+            </div>
+            <div class="footer-item1">
+                <div class="footer-item-title">Company</div>
+                <ul class="company">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Our Locations</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer-item1">
+                <div class="footer-item-title">Support</div>
+                <ul class="company">
+                    <li><a href="">Frequently Asked Questions</a></li>
+                    <li><a href="">Terms and Service</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
